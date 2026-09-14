@@ -1,0 +1,24 @@
+.promise-drift { box-sizing:border-box; height:100%; overflow:auto; background:#f5f7fb; color:#182840; font:13px 'Segoe UI',Tahoma,sans-serif; padding:20px; }
+.promise-drift * { box-sizing:border-box; }
+.promise-drift h1 {margin:0;font-size:24px;letter-spacing:-.7px;}
+.promise-drift .subtitle {color:#697991;margin:6px 0 20px;}
+.promise-drift .summary {display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap;}
+.promise-drift .metric {background:white;border:1px solid #e0e6ef;border-radius:12px;padding:14px 20px;min-width:140px;flex:1;}
+.promise-drift .metric strong {display:block;font-size:26px;color:#244ac0;}
+.promise-drift .order {background:white;border:1px solid #e0e6ef;border-radius:12px;padding:16px;margin:10px 0;}
+.promise-drift .order.selected {outline:2px solid #526de3;}
+.promise-drift .order.dimmed {opacity:.45;}
+.promise-drift .top,.promise-drift .bottom {display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.promise-drift .top {justify-content:space-between;}
+.promise-drift button {font:inherit;cursor:pointer;background:transparent;color:inherit;border:1px solid #dbe2ed;border-radius:6px;padding:5px 9px;}
+.promise-drift button:focus-visible {outline:3px solid #6987ec;}
+.promise-drift .timeline {display:flex;align-items:stretch;gap:8px;overflow:auto;padding:18px 0;}
+.promise-drift .event {min-width:132px;border-inline-start:3px solid #6376e7;background:#f3f5fc;padding:10px;border-radius:4px;}
+.promise-drift .event.actual {border-color:#15a58a;background:#edf9f5;}
+.promise-drift .event strong {display:block;margin-top:7px;font-size:14px;white-space:nowrap;}
+.promise-drift small {display:block;color:#6b7890;margin-top:5px;}
+.promise-drift .badge {border-radius:20px;padding:5px 10px;font-weight:600;background:#eef1f6;}
+.promise-drift .late {color:#bb394a;background:#fff0f2;}.promise-drift .early,.promise-drift .on-time {color:#137b66;background:#e8f7f1;}
+.promise-drift .warning {padding:10px;background:#fff3d6;border-radius:6px;}
+.promise-drift .bottom {border-top:1px solid #edf0f6;padding-top:12px;color:#526077;}
+@media (forced-colors:active) {.promise-drift .order,.promise-drift .event {border:1px solid CanvasText;}}
