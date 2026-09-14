@@ -1,0 +1,110 @@
+{
+  "dataRoles": [
+    {
+      "name": "po",
+      "displayName": "PO Number",
+      "kind": "Grouping"
+    },
+    {
+      "name": "supplier",
+      "displayName": "Supplier",
+      "kind": "Grouping"
+    },
+    {
+      "name": "revision",
+      "displayName": "Revision Date",
+      "kind": "Grouping"
+    },
+    {
+      "name": "promised",
+      "displayName": "Promised Date",
+      "kind": "Grouping"
+    },
+    {
+      "name": "actual",
+      "displayName": "Actual Delivery Date",
+      "kind": "Grouping"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "po": {
+            "max": 1
+          },
+          "supplier": {
+            "max": 1
+          },
+          "revision": {
+            "max": 1
+          },
+          "promised": {
+            "max": 1
+          },
+          "actual": {
+            "max": 1
+          }
+        }
+      ],
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "po"
+              }
+            },
+            {
+              "for": {
+                "in": "supplier"
+              }
+            },
+            {
+              "for": {
+                "in": "revision"
+              }
+            },
+            {
+              "for": {
+                "in": "promised"
+              }
+            },
+            {
+              "for": {
+                "in": "actual"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 30000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "display": {
+      "displayName": "Display",
+      "properties": {
+        "rtl": {
+          "displayName": "Right to left",
+          "type": {
+            "bool": true
+          }
+        },
+        "persian": {
+          "displayName": "Persian calendar",
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    }
+  },
+  "privileges": [],
+  "supportsKeyboardFocus": true,
+  "supportsMultiVisualSelection": true
+}

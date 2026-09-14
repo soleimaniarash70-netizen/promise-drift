@@ -1,0 +1,26 @@
+{
+  "name": "promise-drift",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "package": "pbiviz package",
+    "start": "pbiviz start",
+    "test": "node --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "powerbi-visuals-utils-formattingmodel": "6.0.4",
+    "powerbi-visuals-api": "5.11.1"
+  },
+  "devDependencies": {
+    "less": "^4.2.2",
+    "less-loader": "^12.2.0",
+    "typescript": "5.5.4",
+    "powerbi-visuals-tools": "7.2.1",
+    "eslint": "^9.11.1",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "ts-loader": "^9.5.2",
+    "eslint-plugin-powerbi-visuals": "^1.0.0",
+    "css-loader": "^7.1.2"
+  }
+}

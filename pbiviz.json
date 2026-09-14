@@ -1,0 +1,25 @@
+{
+  "visual": {
+    "name": "promiseDrift",
+    "displayName": "Promise Drift",
+    "guid": "promiseDrift91E672DBBCE24DBFA758AE0B92F513DE",
+    "visualClassName": "Visual",
+    "version": "1.0.1.0",
+    "description": "Purchase order promise revision history and delivery drift against the first commitment.",
+    "supportUrl": "https://github.com/",
+    "gitHubUrl": ""
+  },
+  "apiVersion": "5.11.0",
+  "author": {
+    "name": "Promise Drift",
+    "email": "maintainer@example.invalid"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": []
+}
